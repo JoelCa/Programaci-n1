@@ -3,12 +3,12 @@
 ;; Ejercicio 3
 (define (ej3 x y z)
   (define (equilatero x y z) (= x y z 60))
-  (define (isoceles x y z) (or (and (= x y) (not (= x z)))
+  (define (isosceles x y z) (or (and (= x y) (not (= x z)))
                                (and (= x z) (not (= x y)))
                                (and (= z y) (not (= x z)))))
   (define (escaleno x y z) (and (not (= x y)) (not (= x z)) (not (= y z))))
   (if (equilatero x y z) "equilatero"
-      (if (isoceles x y z) "isoceles"
+      (if (isosceles x y z) "isoceles"
           (if (escaleno x y z) "escaleno"
               "error"))))
 
@@ -19,7 +19,7 @@
 
 (define PL 2)
 
-;; Se aplica solo una de las ofertas?
+;; El descuento se realiza solo sobre uno de los productos?
 (define (ej5 c l) (+ (if (>= l 5) (precioConDescuento (* l PL) 15) (* l PL))
                      (if (>= c 4) (precioConDescuento (* c PC) 10) (* c PC))))
 
@@ -107,7 +107,7 @@
 
 ;; Ejecicio j
 (define brasil (place-image (circle (/ ALTURA 5) "solid" "blue") (/ ANCHO 2) (/ ALTURA 2)
-                            (place-image (rhombus (/ ANCHO 2) 120 "solid" "yellow") (/ ANCHO 2) (/ ALTURA 2)
+                            (place-image (rhombus (/ ALTURA 1.4) 120 "solid" "yellow") (/ ANCHO 2) (/ ALTURA 2)
                                          (place-image (rectangle ANCHO ALTURA "solid" "green") (/ ANCHO 2) (/ ALTURA 2)
                                                       (empty-scene ANCHO ALTURA)))))
 
