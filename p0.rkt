@@ -37,4 +37,4 @@
   (equal? (substring s 0 1) "A"))
 
 ;; Ejercicio 11
-(define (poner- s i) (string-append string-append(substring s 0 i) "-" (substring s i (string-length s))))
+(define (poner- s i) (string-append (substring s 0 i) "-" (substring s i (string-length s))))
