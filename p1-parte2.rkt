@@ -44,7 +44,7 @@
 (define (sgn-img x) (cond [(string=? (clasificación-imagen x) "Flaca") -1]
                           [(string=? (clasificación-imagen x) "Gorda") 1]
                           [(string=? (clasificación-imagen x) "Cuadrada") 0]))
-(define (sgn-ej8 x)
+(define (sgn-ej9 x)
   (cond [(number? x) (sgn-number x)]
         [(and (string? x) (number? (string->number x))) (sgn-number (string->number x))]
         [(and (string? x) (not (number? (string->number x)))) "La cadena no se puede convertir a un número." ]
