@@ -1,8 +1,10 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname p2) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+; "A B -> C" equivale a "A -> B -> C"? 
+
 ; Ejercicio 2
-; distancia-puntos : Number Number Number Number Number -> Number
+; distancia-puntos : Number Number Number Number -> Number
 ; Recibe los valores del plano cartesiano (x1,y1) y (x2,y2), y retorna
 ; la distancia entre estos dos puntos
 (check-within (distancia-puntos 4 10 99 88) 122.9186723000212 0.1)
