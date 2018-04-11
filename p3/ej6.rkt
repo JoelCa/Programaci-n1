@@ -3,10 +3,8 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname ej6) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")) #f)))
 ; Ejercicio 5
 
-(define ALTO 300) ; alto de la escena donde se dibuje el círculo
-(define ANCHO 300)  ; ancho de la escena donde se dibuje el círculo
-
-
+(define ALTO 300)
+(define ANCHO 300)
 (define RADIO 50)
 
 (define INICIAL "")

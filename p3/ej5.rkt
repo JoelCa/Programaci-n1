@@ -11,7 +11,7 @@
 
 (define INICIAL "yellow")
 
-; pantalla : Number -> Image
+; pantalla : String -> Image
 (define (pantalla c) (place-image (circle RADIO "solid" c) (/ ANCHO 2) (/ ALTO 2)
                                   (empty-scene ANCHO ALTO)))
 
